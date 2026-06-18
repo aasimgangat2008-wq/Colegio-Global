@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Colégio Global - Educação Internacional de Excelência em Maputo, Moçambique">
+    <meta name="keywords" content="educação, escola, Maputo, internacional, ensino">
+    <title>Colégio Global - Educação Internacional em Maputo | Excelência Académica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2C3E50;
+            line-height: 1.6;
+            background-color: #FFFFFF;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1B3A6B;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2C3E50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #4A9DBF;
+        }
+
+        .cta-button {
+            background-color: #1B3A6B;
+            color: #FFFFFF;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #4A9DBF;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA+AFYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWm5ybnJ2eoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z') center/cover;
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: #4A9DBF;
+            color: #FFFFFF;
+            padding: 1rem 2.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.05rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #FFFFFF;
+            color: #1B3A6B;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #FFFFFF;
+            padding: 1rem 2.5rem;
+            border: 2px solid #FFFFFF;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 1.05rem;
+        }
+
+        .btn-secondary:hover {
+            background-color: #FFFFFF;
+            color: #1B3A6B;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1B3A6B;
+            text-align: center;
+        }
+
+        h3 {
+            color: #1B3A6B;
+            margin-bottom: 1rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #F8FAFB;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: #4A9DBF;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #5A6C7D;
+            line-height: 1.8;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4A9DBF;
+        }
+
+        .stat-label {
+            color: #5A6C7D;
+            font-size: 0.95rem;
+        }
+
+        /* Event Section */
+        .event-featured {
+            background: linear-gradient(135deg, #4A9DBF 0%, #2D7A99 100%);
+            color: #FFFFFF;
+        }
+
+        .event-featured h2 {
+            color: #FFFFFF;
+        }
+
+        .event-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .event-text h3 {
+            color: #FFFFFF;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-date {
+            display: inline-block;
+            background-color: #D4A574;
+            color: #1B3A6B;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .event-text p {
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        .event-highlight {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-left: 4px solid #D4A574;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+        }
+
+        /* Programs Grid */
+        .programs {
+            background-color: #FFFFFF;
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .program-card {
+            background-color: #F8FAFB;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #4A9DBF;
+            transition: all 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .program-card h3 {
+            font-size: 1.3rem;
+        }
+
+        .program-card p {
+            color: #5A6C7D;
+            line-height: 1.7;
+        }
+
+        /* Features */
+        .features {
+            background-color: #F8FAFB;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-item p {
+            color: #5A6C7D;
+            font-size: 0.95rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #FFFFFF;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background-color: #F8FAFB;
+            padding: 2rem;
+            border-radius: 10px;
+            border-top: 4px solid #4A9DBF;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-text {
+            color: #5A6C7D;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1B3A6B;
+        }
+
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: #4A9DBF;
+        }
+
+        .stars {
+            color: #D4A574;
+            margin-bottom: 1rem;
+        }
+
+        /* News Section */
+        .news {
+            background-color: #F8FAFB;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .news-card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .news-image {
+            height: 200px;
+            background: linear-gradient(135deg, #1B3A6B 0%, #2D5A8C 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #FFFFFF;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+        }
+
+        .news-date {
+            color: #4A9DBF;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-card p {
+            color: #5A6C7D;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: #4A9DBF;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Gallery Section */
+        .event-gallery {
+            background-color: #FFFFFF;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(27, 58, 107, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .view-text {
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #lightbox-img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            font-size: 2rem;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: 300;
+        }
+
+        .lightbox-close:hover {
+            color: #4A9DBF;
+        }
+
+        .lightbox-nav {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+
+        .lightbox-btn {
+            background: #4A9DBF;
+            color: #FFFFFF;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .lightbox-btn:hover {
+            background: #1B3A6B;
+        }
+
+        .lightbox-caption {
+            color: #FFFFFF;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: #FFFFFF;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border: 1px solid #E0E6ED;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background-color: #F8FAFB;
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1B3A6B;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #E8F4F8;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 1.5rem;
+            color: #5A6C7D;
+            line-height: 1.8;
+            background-color: #FFFFFF;
+            border-top: 1px solid #E0E6ED;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #1B3A6B 0%, #2D5A8C 100%);
+            color: #FFFFFF;
+        }
+
+        .contact h2 {
+            color: #FFFFFF;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item h3 {
+            color: #FFFFFF;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item p {
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #4A9DBF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0F1F35;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 3rem 2rem;
+            font-size: 0.95rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #4A9DBF;
+        }
+
+        .footer-section p, .footer-section a {
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .footer-section a {
+            color: #4A9DBF;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .about-content, .event-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                display: none;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">🌍 Colégio Global</div>
+            <ul class="nav-links">
+                <li><a href="#about">Quem Somos</a></li>
+                <li><a href="#programs">Programas</a></li>
+                <li><a href="#news">Notícias</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><button class="cta-button">Matrículas</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Educação Internacional de Excelência</h1>
+            <p>Preparando os líderes de amanhã em Maputo</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Saiba Mais</button>
+                <button class="btn-secondary">Agende uma Visita</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h3>Quem Somos</h3>
+                    <p>O Colégio Global é uma instituição de ensino internacional dedicada a oferecer educação de qualidade superior, preparando os nossos alunos para o sucesso académico e profissional global.</p>
+                    <p>Com uma metodologia inovadora e um corpo docente altamente qualificado, criamos um ambiente de aprendizagem dinâmico que promove excelência académica, desenvolvimento de caráter e preparação para o futuro.</p>
+                    <p>Localizado no coração de Maputo, oferecemos programas educacionais de classe mundial que combinam tradição com inovação, preparando os nossos alunos para os desafios do século XXI.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Alunos Ativos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Professores</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Taxa de Sucesso</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Section - Dia da Criança Africana -->
+    <section class="event-featured">
+        <div class="container">
+            <h2>Evento Destaque</h2>
+            <div class="event-content">
+                <div class="event-text">
+                    <div class="event-date">18 de Junho de 2024</div>
+                    <h3>🎉 Dia da Criança Africana</h3>
+                    <p>Celebramos com entusiasmo o Dia da Criança Africana no Colégio Global, uma data de grande importância que reconhece os direitos e o bem-estar das crianças em todo o continente africano.</p>
+                    <p>Durante este dia especial, os nossos alunos participaram em atividades educacionais interativas, apresentações culturais vibrantes e discussions sobre cidadania, direitos das crianças e responsabilidade social. O evento reforçou os valores fundamentais do Colégio Global: respeito, inclusão e compromisso com o desenvolvimento integral das nossas crianças.</p>
+                    <div class="event-highlight">
+                        <strong>Destaques do Evento:</strong>
+                        <p style="margin-top: 0.5rem;">✨ Performances artísticas e culturais • 📚 Workshops educacionais • 🤝 Atividades comunitárias • 🌍 Reflexões sobre cidadania global</p>
+                    </div>
+                </div>
+                <div class="event-text" style="text-align: center;">
+                    <div style="font-size: 4rem; margin: 2rem 0;">👨‍👩‍👧‍👦</div>
+                    <p style="opacity: 0.9;">O Colégio Global dedica-se a proporcionar um ambiente seguro, acolhedor e inspirador onde cada criança pode florescer, desenvolver-se plenamente e alcançar o seu máximo potencial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Gallery Section -->
+    <section class="event-gallery">
+        <div class="container">
+            <h2>Galeria do Evento - Dia da Criança Africana</h2>
+            <p style="text-align: center; color: #5A6C7D; margin-bottom: 3rem; font-size: 1.1rem;">Confira os momentos mais especiais da celebração</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="IMG_4228.png" alt="Decoração do evento" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-text">Ver Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="IMG_4229.png" alt="Sala de aula decorada" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-text">Ver Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="a8e5073b-329b-46fe-8114-bede9c531cd5.jpeg" alt="Grupo de alunos e staff" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-text">Ver Foto</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="IMG_4187.jpeg" alt="Evento em progresso" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-text">Ver Foto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Galeria" style="width: 100%; max-width: 90vw; max-height: 80vh; object-fit: contain; border-radius: 8px;">
+            <div class="lightbox-nav">
+                <button class="lightbox-btn prev" onclick="changePhoto(-1)">❮ Anterior</button>
+                <button class="lightbox-btn next" onclick="changePhoto(1)">Próximo ❯</button>
+            </div>
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2>Nossos Programas</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>📚 Educação Infantil</h3>
+                    <p>Desenvolvimento cognitivo e emocional através de atividades lúdicas e interativas, criando uma base sólida para aprendizagem futura.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🎓 Ensino Primário</h3>
+                    <p>Programas curriculares internacionais com foco em pensamento crítico, criatividade e competências essenciais do século XXI.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🌟 Ensino Secundário</h3>
+                    <p>Preparação rigorosa para exames internacionais, com oportunidades de especialização e desenvolvimento académico avançado.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🌐 Programas Bilíngues</h3>
+                    <p>Ensino em Português e Inglês, com imersão cultural e linguística para máxima proficiência nas duas línguas.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🏆 Atividades Extracurriculares</h3>
+                    <p>Desportos, artes, música e tecnologia que complementam a formação académica e desenvolvem talentos especiais.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🚀 Tecnologia & Inovação</h3>
+                    <p>Integração de tecnologia moderna no currículo, preparando alunos para uma era digital e inovadora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>O Que Nos Diferencia</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Excelência Docente</h3>
+                    <p>Professores internacionalmente qualificados com experiência global</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>Resultados Comprovados</h3>
+                    <p>Alunos bem-sucedidos em universidades internacionais</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Perspetiva Global</h3>
+                    <p>Currículo internacional com foco em cidadania global</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💡</div>
+                    <h3>Inovação Pedagógica</h3>
+                    <p>Metodologias modernas de ensino e aprendizagem</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏫</div>
+                    <h3>Infraestrutura Moderna</h3>
+                    <p>Instalações de qualidade com recursos tecnológicos atualizados</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Comunidade Inclusiva</h3>
+                    <p>Ambiente acolhedor que valoriza diversidade e respeito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>O Que Dizem Sobre Nós</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"O Colégio Global transformou a educação do meu filho. Excelência académica combinada com um ambiente acolhedor e dedicado ao desenvolvimento integral."</p>
+                    <div class="testimonial-author">Maria Silva</div>
+                    <div class="testimonial-role">Mãe de aluno - Ensino Primário</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Professores dedicados, infraestrutura moderna e uma visão clara de excelência. Recomendo o Colégio Global a todas as famílias que buscam educação internacional de qualidade."</p>
+                    <div class="testimonial-author">João Pereira</div>
+                    <div class="testimonial-role">Pai de aluno - Ensino Secundário</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Meu filho foi aceito em universidades de topo. O Colégio Global preparou-o perfeitamente. Grato pela excelência académica e apoio contínuo."</p>
+                    <div class="testimonial-author">Fatima Hassan</div>
+                    <div class="testimonial-role">Mãe de ex-aluno - Universidades Internacionais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <h2>Notícias e Eventos</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">📜</div>
+                    <div class="news-content">
+                        <div class="news-date">18 de Junho de 2024</div>
+                        <h3>Dia da Criança Africana Celebrado</h3>
+                        <p>O Colégio Global realizou um evento memorável em celebração do Dia da Criança Africana, com atividades educacionais e culturais para todos os alunos.</p>
+                        <a href="#" class="read-more">Saiba Mais →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">🏆</div>
+                    <div class="news-content">
+                        <div class="news-date">10 de Junho de 2024</div>
+                        <h3>Alunos Ganham Concurso Nacional</h3>
+                        <p>Parabéns aos nossos alunos que conquistaram o primeiro lugar no Concurso Nacional de Ciência e Tecnologia 2024.</p>
+                        <a href="#" class="read-more">Saiba Mais →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">🌱</div>
+                    <div class="news-content">
+                        <div class="news-date">5 de Junho de 2024</div>
+                        <h3>Projeto Sustentabilidade Iniciado</h3>
+                        <p>Lançamento do programa "Colégio Verde", focado em sustentabilidade ambiental e responsabilidade comunitária.</p>
+                        <a href="#" class="read-more">Saiba Mais →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Qual é o processo de admissão?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        O processo de admissão no Colégio Global envolve: análise de documentos escolares anteriores, testes de avaliação académica, entrevista com pais e aluno, e análise da adequação do aluno ao nosso ambiente e metodologia. Os prazos variam por nível escolar.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quais são as línguas de ensino?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        O Colégio Global oferece programas bilíngues em Português e Inglês. Na Educação Infantil e Primária, o ensino é equilibrado entre ambas as línguas. No Ensino Secundário, algumas disciplinas são lecionadas em Inglês para potenciar proficiência.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Qual é o tamanho das turmas?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Mantemos turmas reduzidas para garantir atenção personalizada. Na Educação Infantil, o máximo é 15 alunos. Na Educação Primária, máximo 20 alunos. No Ensino Secundário, máximo 25 alunos por turma.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Que infraestrutura e equipamentos estão disponíveis?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        O Colégio Global dispõe de salas de aula modernas, laboratórios científicos equipados, biblioteca com acervo extenso, sala de informática com computadores atualizados, ginásio, campo desportivo, refeitório e áreas de recreação seguras.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Existem programas de bolsas de estudo?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! O Colégio Global oferece bolsas de mérito para alunos com desempenho académico excepcional. Também disponibilizamos planos de pagamento flexíveis e programas de auxílio financeiro mediante análise. Contacte-nos para mais informações.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Qual é o calendário académico?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        O calendário académico segue o padrão internacional com três trimestres. Período letivo: Janeiro-Março, Abril-Julho, Agosto-Dezembro. Férias escolares são comunicadas no calendário detalhado fornecido no início de cada ano letivo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Entre em Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <h3>📍 Localização</h3>
+                    <p>N700 Av. Filipe Samuel Magaia</p>
+                    <p>Maputo, Moçambique</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Telefone</h3>
+                    <p>Atendimento Direto</p>
+                    <a href="tel:+258847676004">+258 84 767 6004</a>
+                </div>
+                <div class="contact-item">
+                    <h3>💬 WhatsApp</h3>
+                    <p>Contacte-nos via WhatsApp</p>
+                    <a href="https://wa.me/258847676004?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Colégio%20Global" target="_blank">Enviar mensagem</a>
+                </div>
+                <div class="contact-item">
+                    <h3>⏰ Horário</h3>
+                    <p>Seg-Sex: 7:00 AM - 5:00 PM</p>
+                    <p>Sábado: Por Agendamento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nós</h4>
+                    <p>Colégio Global é uma instituição de ensino internacional dedicada à excelência académica e desenvolvimento integral dos nossos alunos em Maputo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <p><a href="#about">Quem Somos</a></p>
+                    <p><a href="#programs">Programas</a></p>
+                    <p><a href="#news">Notícias</a></p>
+                    <p><a href="#contact">Contacto</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">LinkedIn</a></p>
+                    <p><a href="#">WhatsApp</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Colégio Global. Todos os direitos reservados. | Educação Internacional em Maputo | <a href="#" style="color: #4A9DBF;">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            item.classList.toggle('active');
+        }
+
+        // Gallery Lightbox
+        const galleryPhotos = [
+            {
+                src: 'IMG_4228.png',
+                caption: 'Decoração festiva do evento - Dia da Criança Africana'
+            },
+            {
+                src: 'IMG_4229.png',
+                caption: 'Sala de aula preparada para a celebração'
+            },
+            {
+                src: 'a8e5073b-329b-46fe-8114-bede9c531cd5.jpeg',
+                caption: 'Alunos e staff em traje tradicional'
+            },
+            {
+                src: 'IMG_4187.jpeg',
+                caption: 'Evento em progresso com toda a comunidade'
+            }
+        ];
+
+        let currentPhotoIndex = 0;
+
+        function openLightbox(index) {
+            currentPhotoIndex = index;
+            updateLightboxContent();
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function changePhoto(direction) {
+            currentPhotoIndex += direction;
+            if (currentPhotoIndex >= galleryPhotos.length) {
+                currentPhotoIndex = 0;
+            } else if (currentPhotoIndex < 0) {
+                currentPhotoIndex = galleryPhotos.length - 1;
+            }
+            updateLightboxContent();
+        }
+
+        function updateLightboxContent() {
+            const photo = galleryPhotos[currentPhotoIndex];
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            img.src = '/uploads/' + photo.src;
+            caption.textContent = photo.caption + ' (' + (currentPhotoIndex + 1) + '/' + galleryPhotos.length + ')';
+        }
+
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', function(event) {
+            if (document.getElementById('lightbox').classList.contains('active')) {
+                if (event.key === 'ArrowLeft') {
+                    changePhoto(-1);
+                } else if (event.key === 'ArrowRight') {
+                    changePhoto(1);
+                } else if (event.key === 'Escape') {
+                    closeLightbox();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
